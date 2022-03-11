@@ -12,7 +12,7 @@
 // to match your app's branding.
 // Tip: Use the "Theme Builder" on Quasar's documentation website.
 
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 $primary: #1976d2;
 $secondary: #26a69a;
@@ -154,13 +154,13 @@ button:focus {outline: none;}
 
 .login-wrap h3{
   margin: 0 0 15px 0;
-  font-family: 'Poppins';
+  font-family: 'Inter', sans-serif;
   font-size: 28px;
   line-height: 1;
 }
 
 .login-wrap p{
-  font-family: 'Poppins';
+  font-family: 'Inter', sans-serif;
   font-size: 13px;
   color: #c5c5cd;
   margin-bottom: 25px;
@@ -196,7 +196,7 @@ margin: 0 auto;
 
 .form-control {
 background: transparent;
-font-family: 'Poppins';
+font-family: 'Inter', sans-serif;
 font-size: 13px;
 border: none;
 padding: 0;
@@ -218,7 +218,7 @@ input[type=checkbox]{
 
 input[type=checkbox] + label, .nav-link{
 font-size: 14px;
-font-family: 'Poppins';
+font-family: 'Inter', sans-serif;
 font-weight: 500;
 color: #222;
 cursor: pointer;
@@ -260,7 +260,7 @@ border-color: rgb(79, 60, 253);
   -webkit-box-shadow: none;
   box-shadow: none;
   font-size: 15px;
-  font-family: 'Poppins';
+  font-family: 'Inter', sans-serif;
 }
 
 .btn.btn-primary {
@@ -293,7 +293,7 @@ padding: 0 85px 0 50px;
 }
 
 .left-login_footer h2{
-font-family: 'Poppins';
+font-family: 'Inter', sans-serif;
 font-size: 56px;
 font-weight: bold;
 color: #fff;
