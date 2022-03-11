@@ -54,6 +54,9 @@
         </div>
         <div class="left-wrap-login">
           <div class="content_left_login w-100 h-100">
+            <div class="header_left">
+               <router-link  :to="{name: 'Login' }" class=""><img src="~assets/logo.png" alt="" srcset=""></router-link>
+            </div>
             <div class="left-login_footer">
               <h2>
                 Bienvenidos a Viajes Signature

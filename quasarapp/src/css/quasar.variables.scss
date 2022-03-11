@@ -274,8 +274,14 @@ min-height: 100vh;
 margin-right: -25px;
 background-color: rgb(34 34 34 / 20%);
 }
+
+.header_left{
+  padding-left: 50px;
+  padding-top: 40px;
+}
+
 .left-login_footer{
-height: 100%;
+  height: calc(100% - 120px);
 display: flex;
 align-items: flex-start;
 justify-content: flex-end;
