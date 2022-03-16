@@ -14,7 +14,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-$primary: #1976d2;
+$primary: #00567f;
 $secondary: #26a69a;
 $accent: #9c27b0;
 
@@ -34,6 +34,7 @@ $warning: #f2c037;
 
 .font-wt600{
     font-weight: 600;
+    color: #00567f;
 }
 
 .d-md-flex {
@@ -201,7 +202,7 @@ font-size: 13px;
 border: none;
 padding: 0;
 height: 40px;
-color: rgb(79, 60, 253);
+color: #00567f;
 border-bottom: 1px solid rgba(99, 99, 99, 0.4);
 border-radius: 0;
 }
@@ -227,7 +228,7 @@ cursor: pointer;
 .nav-link{
 text-decoration: none;
 font-weight: 600;
-color: rgb(79, 60, 253);
+color: #00567f;
 }
 
 .form-control:hover, .form-control:focus {
@@ -245,8 +246,8 @@ box-shadow: none;
 }
 
 .form-control:focus, .form-control:visited, .form-control:focus + .btn-view_pd {
-color: rgb(79, 60, 253);
-border-color: rgb(79, 60, 253);
+color: #00567f;
+border-color: #00567f;
 }
 
 .plh0::-webkit-input-placeholder { color: #999;}
@@ -264,7 +265,7 @@ border-color: rgb(79, 60, 253);
 }
 
 .btn.btn-primary {
-  background: rgb(79, 60, 253);
+  background: #00567f;
   border: none;
   color: #fff;
 }
