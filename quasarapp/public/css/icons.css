@@ -1,88 +1,127 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../font/icomoon.eot?d9iqqv');
+  src:  url('../font/icomoon.eot?d9iqqv#iefix') format('embedded-opentype'),
+    url('../font/icomoon.ttf?d9iqqv') format('truetype'),
+    url('../font/icomoon.woff?d9iqqv') format('woff'),
+    url('../font/icomoon.svg?d9iqqv#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
-  @font-face {
-    font-family: 'icomoon';
-    src:  url('../font/icomoon.eot?3jacih');
-    src:  url('../font/icomoon.eot?3jacih#iefix') format('embedded-opentype'),
-      url('../font/icomoon.ttf?3jacih') format('truetype'),
-      url('../font/icomoon.woff?3jacih') format('woff'),
-      url('../font/icomoon.svg?3jacih#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-clipboard:before {
-    content: "\e90e";
-  }
-  .icon-lock:before {
-    content: "\e907";
-  }
-  .icon-search:before {
-    content: "\e908";
-  }
-  .icon-shopping:before {
-    content: "\e909";
-  }
-  .icon-eye-blocked:before {
-    content: "\e911";
-  }
-  .icon-eye:before {
-    content: "\e912";
-  }
-  .icon-truck:before {
-    content: "\e90f";
-  }
-  .icon-make-group:before {
-    content: "\e90a";
-  }
-  .icon-dashboard:before {
-    content: "\e90b";
-  }
-  .icon-arrow-right:before {
-    content: "\e900";
-  }
-  .icon-arrow-left:before {
-    content: "\e901";
-  }
-  .icon-chevron-small-right:before {
-    content: "\e90d";
-  }
-  .icon-plus:before {
-    content: "\e902";
-  }
-  .icon-arrow-right1:before {
-    content: "\e913";
-  }
-  .icon-settings:before {
-    content: "\e910";
-  }
-  .icon-users:before {
-    content: "\e90c";
-  }
-  .icon-minus:before {
-    content: "\e903";
-  }
-  .icon-checkbox-checked:before {
-    content: "\e904";
-  }
-  .icon-radio-unchecked:before {
-    content: "\e905";
-  }
-  .icon-menu:before {
-    content: "\e906";
-  }
-  
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Vector-4:before {
+  content: "\e919";
+  color: #00567f;
+}
+.icon-Vector-3:before {
+  content: "\e91a";
+  color: #00567f;
+}
+.icon-Vector-6:before {
+  content: "\e91b";
+  color: #00567f;
+}
+.icon-Vector-5:before {
+  content: "\e91c";
+  color: #00567f;
+}
+.icon-Vector-2:before {
+  content: "\e91d";
+  color: #00567f;
+}
+.icon-interrogante:before {
+  content: "\e917";
+  color: #9f9f9f;
+}
+.icon-notificacion:before {
+  content: "\e918";
+  color: #9f9f9f;
+}
+.icon-clipboard:before {
+  content: "\e90e";
+}
+.icon-lock:before {
+  content: "\e907";
+}
+.icon-search:before {
+  content: "\e908";
+}
+.icon-ellipsis-v:before {
+  content: "\e91e";
+}
+.icon-shopping:before {
+  content: "\e909";
+}
+.icon-eye-blocked:before {
+  content: "\e911";
+}
+.icon-eye:before {
+  content: "\e912";
+}
+.icon-truck:before {
+  content: "\e90f";
+}
+.icon-make-group:before {
+  content: "\e90a";
+}
+.icon-dashboard:before {
+  content: "\e90b";
+}
+.icon-arrow-right:before {
+  content: "\e900";
+}
+.icon-arrow-left:before {
+  content: "\e901";
+}
+.icon-circle-with-cross:before {
+  content: "\e914";
+}
+.icon-chevron-small-right:before {
+  content: "\e90d";
+}
+.icon-plus:before {
+  content: "\e902";
+}
+.icon-arrow-right1:before {
+  content: "\e913";
+}
+.icon-settings:before {
+  content: "\e910";
+}
+.icon-users:before {
+  content: "\e90c";
+}
+.icon-minus:before {
+  content: "\e903";
+}
+.icon-arrow_ios:before {
+  content: "\e916";
+}
+.icon-clear:before {
+  content: "\e915";
+}
+.icon-checkbox-checked:before {
+  content: "\e904";
+}
+.icon-radio-unchecked:before {
+  content: "\e905";
+}
+.icon-menu:before {
+  content: "\e906";
+}
