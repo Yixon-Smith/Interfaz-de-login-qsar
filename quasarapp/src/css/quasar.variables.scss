@@ -14,7 +14,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-$primary: #1976d2;
+$primary: #00567F;
 $secondary: #26a69a;
 $accent: #9c27b0;
 
@@ -267,7 +267,7 @@ font-size: 13px;
 border: none;
 padding: 0;
 height: 40px;
-color: rgb(79, 60, 253);
+color: #00567F;
 border-bottom: 1px solid rgba(99, 99, 99, 0.4);
 border-radius: 0;
 }
@@ -293,7 +293,7 @@ cursor: pointer;
 .nav-link{
 text-decoration: none;
 font-weight: 600;
-color: rgb(79, 60, 253);
+color: #00567F;
 }
 
 .form-control:hover, .form-control:focus {
@@ -311,8 +311,8 @@ box-shadow: none;
 }
 
 .form-control:focus, .form-control:visited, .form-control:focus + .btn-view_pd {
-color: rgb(79, 60, 253);
-border-color: rgb(79, 60, 253);
+color: #00567F;
+border-color: #00567F;
 }
 
 .plh0::-webkit-input-placeholder { color: #999;}
@@ -330,7 +330,7 @@ border-color: rgb(79, 60, 253);
 }
 
 .btn.btn-primary {
-  background: rgb(79, 60, 253);
+  background: #00567F;
   border: none;
   color: #fff;
 }
