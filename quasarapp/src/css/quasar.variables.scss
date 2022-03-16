@@ -12,9 +12,9 @@
 // to match your app's branding.
 // Tip: Use the "Theme Builder" on Quasar's documentation website.
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
-$primary: #00567F;
+$primary: #1976d2;
 $secondary: #26a69a;
 $accent: #9c27b0;
 
@@ -231,13 +231,13 @@ button:focus {outline: none;}
 
 .login-wrap h3{
   margin: 0 0 15px 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins';
   font-size: 28px;
   line-height: 1;
 }
 
 .login-wrap p{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins';
   font-size: 13px;
   color: #c5c5cd;
   margin-bottom: 25px;
@@ -273,12 +273,12 @@ margin: 0 auto;
 
 .form-control {
 background: transparent;
-font-family: 'Inter', sans-serif;
+font-family: 'Poppins';
 font-size: 13px;
 border: none;
 padding: 0;
 height: 40px;
-color: 00567F;
+color: rgb(79, 60, 253);
 border-bottom: 1px solid rgba(99, 99, 99, 0.4);
 border-radius: 0;
 }
@@ -295,7 +295,7 @@ input[type=checkbox]{
 
 input[type=checkbox] + label, .nav-link{
 font-size: 14px;
-font-family: 'Inter', sans-serif;
+font-family: 'Poppins';
 font-weight: 500;
 color: #222;
 cursor: pointer;
@@ -304,7 +304,7 @@ cursor: pointer;
 .nav-link{
 text-decoration: none;
 font-weight: 600;
-color: #00567F;
+color: rgb(79, 60, 253);
 }
 
 .form-control:hover, .form-control:focus {
@@ -322,8 +322,8 @@ box-shadow: none;
 }
 
 .form-control:focus, .form-control:visited, .form-control:focus + .btn-view_pd {
-color: #00567F;
-border-color: #00567F;
+color: rgb(79, 60, 253);
+border-color: rgb(79, 60, 253);
 }
 
 .plh0::-webkit-input-placeholder { color: #999;}
@@ -337,11 +337,11 @@ border-color: #00567F;
   -webkit-box-shadow: none;
   box-shadow: none;
   font-size: 15px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins';
 }
 
 .btn.btn-primary {
-  background: #00567F;
+  background: rgb(79, 60, 253);
   border: none;
   color: #fff;
 }
@@ -374,7 +374,7 @@ padding: 0 85px 0 50px;
 }
 
 .left-login_footer h2{
-font-family: 'Inter', sans-serif;
+font-family: 'Poppins';
 font-size: 56px;
 font-weight: bold;
 color: #fff;
@@ -543,7 +543,7 @@ color:#999;
 } 
 
 .nav__items {
-  font-family: 'Inter', sans-serif;
+  font-family: 'roboto';
   display: flex;
   align-items: center;
   margin-bottom: 15px;
