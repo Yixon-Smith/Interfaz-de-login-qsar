@@ -6,7 +6,8 @@ const routes = [
       { name:"Login",path: "", component: () => import("pages/Index.vue") },
       { name: "Registrar",path: "/registrar", component: () => import("pages/Register.vue") },
       { name: "Dashboard",path: "/inicio", component: () => import("pages/Dashboard.vue") },
-      { name: "Usuarios",path: "/usuarios", component: () => import("pages/Usuarios.vue") }
+      { name: "Usuarios",path: "/usuarios", component: () => import("pages/Usuarios.vue") },
+      { name: "Afiliados",path: "/afiliados", component: () => import("pages/Afiliados.vue") }
     ],
   },
 

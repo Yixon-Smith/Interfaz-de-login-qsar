@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../font/icomoon.eot?d9iqqv');
-  src:  url('../font/icomoon.eot?d9iqqv#iefix') format('embedded-opentype'),
-    url('../font/icomoon.ttf?d9iqqv') format('truetype'),
-    url('../font/icomoon.woff?d9iqqv') format('woff'),
-    url('../font/icomoon.svg?d9iqqv#icomoon') format('svg');
+  src:  url('../font/icomoon.eot?6zg8vp');
+  src:  url('../font/icomoon.eot?6zg8vp#iefix') format('embedded-opentype'),
+    url('../font/icomoon.ttf?6zg8vp') format('truetype'),
+    url('../font/icomoon.woff?6zg8vp') format('woff'),
+    url('../font/icomoon.svg?6zg8vp#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-delete:before {
+  content: "\e91f";
+  color: #9f9f9f;
+}
+.icon-view:before {
+  content: "\e920";
+  color: #9f9f9f;
+}
 .icon-Vector-4:before {
   content: "\e919";
   color: #00567f;
@@ -97,6 +105,9 @@
 }
 .icon-plus:before {
   content: "\e902";
+}
+.icon-edit:before {
+  content: "\e921";
 }
 .icon-arrow-right1:before {
   content: "\e913";

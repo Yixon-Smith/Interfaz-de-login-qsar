@@ -42,20 +42,26 @@
                                     <div class="svg-icon">
                                         <span class="icon-Vector-2"></span>
                                     </div>  
-                                    <a href="">Inicio</a>
+                                    <router-link  :to="{name: 'Dashboard' }">
+                                        Inicio
+                                    </router-link>
                                 </li>
                                 
                                 <li class="nav__items active">
                                     <div class="svg-icon">
                                         <span class="icon-Vector-3"></span>
                                     </div>  
-                                    <a href="">Usuarios</a>
+                                    <router-link  :to="{name: 'Usuarios' }">
+                                        Usuarios
+                                    </router-link>
                                 </li>
                                 <li class="nav__items ">
                                     <div class="svg-icon">
                                         <span class="icon-Vector-4"></span>
                                     </div>  
-                                    <a href="">Afiliados</a>
+                                    <router-link  :to="{name: 'Afiliados' }">
+                                        Afiliados
+                                    </router-link>
                                 </li>
                                 <li class="nav__items ">
                                     <div class="svg-icon">
