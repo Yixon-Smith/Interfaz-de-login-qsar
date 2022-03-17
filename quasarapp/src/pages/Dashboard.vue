@@ -158,6 +158,26 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="h-full p-lr-10 bg-2">
+                                            <div class="card-table table-responsive">
+                                                <table class="table table-vcenter">
+                                                    <thead>
+                                                        <th class="bg-2 text-center">Nombre</th>
+                                                        <th class="bg-2 text-center">Cedula</th>
+                                                        <th class="bg-2 text-center">Valor</th>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="bg-2 text-center cl3">Julio Peña</td>
+                                                            <td class="bg-2 text-center cl3">1234567890</td>
+                                                            <td class="bg-2 text-center cl3">5.000.000</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
