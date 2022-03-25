@@ -43,6 +43,9 @@ $warning: #f2c037;
 .cl1{color: $primary;}
 .cl2{color: #00567F;}
 .cl3{color: #b4b4b4;}
+.cl4{color: #7f7f7f;}
+
+.fw-300{font-weight: 300;}
 
 .bg-2{background-color: #fff !important;}
 .fs36{font-size: 36px;}
@@ -95,10 +98,10 @@ $warning: #f2c037;
 .p-lr-0, .p-r-0{padding-right: 0px !important;}
 .p-lr-0, .p-l-0 {padding-left: 0px !important;}
 
-.p-lr-15{padding-right: 15px;}
+.p-lr-15, .p-r-15{padding-right: 15px;}
 
 .p-l-8{padding-left: 8px !important;}
-.p-lr-15{padding-left: 15px;}
+.p-lr-15, .p-l-15{padding-left: 15px;}
 
 
 .p-t-5{padding-top: 5px;}
@@ -127,6 +130,7 @@ a{
 .m-t-20{margin-top: 20px;}
 .m-l-10{margin-left: 10px;}
 .m-r-10{margin-right: 10px;}
+.m-r-5{margin-right: 5px;}
 
 input, textarea, label {
   display: block;
@@ -257,7 +261,7 @@ max-width: 380px;
 margin: 0 auto;
 }
 
-.form-control {
+.form-control, select {
   display: block;
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
@@ -277,7 +281,7 @@ margin: 0 auto;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
-.form-control {
+.form-control, select {
 background: transparent;
 font-family: 'Inter', sans-serif;
 font-size: 13px;
@@ -289,14 +293,23 @@ border-bottom: 1px solid rgba(99, 99, 99, 0.4);
 border-radius: 0;
 }
 
+select{
+  color: #7f7f7f;
+}
+
 input[type=checkbox]{
   height: 14px;
   font-size: 14px;
   width: 14px;
   margin-right: 10px;
-  border: 1px solid rgb(255 255 255 / 10%);
+  border: 1px solid #00567F;
   color: rgb(0 0 0 / 54%);
   cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 input[type=checkbox] + label, .nav-link{
@@ -680,6 +693,19 @@ border-radius: 5px;
 .body-page.q-page-container{
   padding-top: 25px;
   padding-left: 84px;
+}
+
+.select_v-0{
+  border: none;
+  background-color: rgba(222, 164, 0, 0.36);
+  color: #7f7f7f;
+}
+
+
+.form-selectgroup-input:checked+.form-selectgroup-label.select_v-0 {
+  z-index: 1;
+  color: #fff;
+  background: #00567F;
 }
 
 

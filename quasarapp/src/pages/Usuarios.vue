@@ -72,8 +72,10 @@
                                 <li class="nav__items ">
                                     <div class="svg-icon">
                                         <span class="icon-Vector-6"></span>
-                                    </div>  
-                                    <a href="">Contratos</a>
+                                    </div> 
+                                    <router-link  :to="{name: 'Contrato' }">
+                                        Contrato
+                                    </router-link> 
                                 </li>
                             </ul>
                             <div class="footer_botton-sidebar">
