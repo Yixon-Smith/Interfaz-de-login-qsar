@@ -5,7 +5,12 @@ import {
   createWebHistory,
   createWebHashHistory,
 } from "vue-router";
+
+
 import routes from "./routes";
+
+
+
 
 /*
  * If not building with SSR mode, you can
@@ -16,7 +21,9 @@ import routes from "./routes";
  * with the Router instance.
  */
 
-export default route(function (/* { store, ssrContext } */) {
+console.log("hola paso por aqui");
+
+export default route(function ({ store, ssrContext }) {
   const createHistory = process.env.SERVER
     ? createMemoryHistory
     : process.env.VUE_ROUTER_MODE === "history"
@@ -35,5 +42,34 @@ export default route(function (/* { store, ssrContext } */) {
     ),
   });
 
+  //Funcion Logica para comprobar que esta autentificado y si tiene los permisos concedidos
+  Router.beforeEach((to, from, next) => {
+    const auth = store.state.Auth
+    //Esta autentificado?
+    if (to.matched.some(record => record.meta.requireLogin) && !auth.loginStatus) {
+      next({
+        name: 'Login'
+      })
+    } else{
+      console.log(to);
+      const permisos = ( auth.loginStatus ) ? auth.routes : [];
+      console.log(permisos);
+      if ( auth.loginStatus ){
+        const path = (permisos[0] != '*') ? permisos[0] : '/inicio'
+        if ( to.name == 'Login' || to.name == 'Registrar'  ){
+            next({
+              path: path
+            })
+        }else if ( permisos.length != 0 && permisos[0] != '*'){
+          if ( !permisos.includes(to.path) ){
+            next({
+              path: path
+            })
+          }
+        }
+      }
+      next()
+    } 
+  })
   return Router;
 });

@@ -15,19 +15,19 @@
                 <div class="login-wrap w-100">
                   <h3 class="w-100">Inicia Sesión<strong class="cl1 fs36">.</strong></h3>
                   <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor.</p>
-                  <form action="#" class="form-LR">
+                  <form action="#" class="form-LR" @submit.prevent="login">
                     <div class="form-group">
-                      <input type="email" name="email" class="form-control plh0" placeholder="Correo Electrónico" id="">
+                      <input type="email" name="email" v-model="email" class="form-control plh0" placeholder="Correo Electrónico" id="">
                     </div>
                     <div class="form-group">
-                      <input :type="passwordType" name="password" class="form-control plh0 p-r-35" placeholder="Contraseña" id="">
+                      <input :type="passwordType" v-model="password" name="password" class="form-control plh0 p-r-35" placeholder="Contraseña" id="">
                       <button type="button" class="btn-view_pd" @click="viewPD(event)">
                         <span :class="iconEyePass"></span>
                       </button>
                     </div>
                     <div class="form-group d-md-flex p-t-5">
                       <div class="d-md-flex align-items-center w-50">
-                         <input type="checkbox" id="recordarme" name="remember">
+                         <input type="checkbox" id="recordarme" value="true" v-model="remember" name="remember">
                         <label for="recordarme">Recordarme</label>
                       </div>
                       <div class="w-50 text-right ">
@@ -70,17 +70,47 @@
 </template>
 
 <script>
+import { route } from "quasar/wrappers";
 import { defineComponent } from "vue";
+import { mapActions } from 'vuex';
+
 
 export default defineComponent({
   name: "Login",
   data(){
     return{
       passwordType: 'password',
-      iconEyePass: 'icon-eye-blocked'
+      iconEyePass: 'icon-eye-blocked',
+      email: '',
+      password: '',
+      remember: 'false'
     }
   },
   methods: {
+    ...mapActions('Auth',['doLogin']),
+    async login(){
+      let data = {
+        'email': this.email,
+        'password': this.password,
+        'remember': this.remember
+      }
+
+      try {
+        await this.doLogin(data);
+        let routes = localStorage.getItem('permissions')
+            routes = JSON.parse(routes);
+
+        const toPath =  ( routes[0] == '*' ) ? '/inicio' : routes[0]
+        this.$router.push(toPath)
+        
+      } catch (err) {
+          console.log(err.response)
+          console.log("hola error");
+      }
+   
+   
+ 
+    },
     viewPD() {
        this.passwordType = this.passwordType === "password" ? "text" : "password";
        this.iconEyePass = this.iconEyePass === "icon-eye-blocked" ? "icon-eye" : "icon-eye-blocked";
